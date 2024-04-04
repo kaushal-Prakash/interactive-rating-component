@@ -1,0 +1,171 @@
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.clicked{
+    background-color: var(--Light-Grey);
+    color: white;
+}
+.active{
+    display: block;
+}
+.deactive{
+    display: none;
+}
+
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: var(--Very-Dark-Blue);
+    font-family: "Overpass";
+}
+.rating-wrapper{
+    display: block;
+    width: 320px;
+    height: 320px;
+    background-color: var(--Dark-Blue);
+    border-radius: 20px;
+}
+.star{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(67, 65, 65);
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.star img{
+    height: 13px;
+    margin: 0 auto;
+}
+.ques{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.ques h2{
+    font-size: 19px;
+    color: white;
+}
+.feed{
+    width: 280px;
+    margin: 20px;
+}
+.feed p{
+    color: var(--Light-Grey);
+    font-size: 14px;
+}
+.rating{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.rating button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 0;
+    background-color: rgb(56, 56, 73);
+    color: var(--Medium-Grey);
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.rating button:hover{
+    background-color: var(--Orange);
+    color: white;
+}
+
+.submition{
+    width: 100%;
+    display: flex;
+}
+.submit{
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 35px;
+    border: 0;
+    border-radius: 20px;
+    background-color: var(--Orange);
+    color: white;
+    font-size: 15px;
+    transition: 0.6s ease;
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: white;
+    color: var(--Orange);
+}
+.thanks-wrapper{
+    width: 320px;
+    height: 320px;
+    background-color: var(--Dark-Blue);
+    border-radius: 20px;
+}
+.hidden{
+    display: none;
+}
+.head{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.head img{
+    height: 70px;
+    width: 100px;
+    transform: translateX(-8px);
+    margin-top: 30px;
+}
+.rated{
+    width: fit-content;
+    background-color: rgba(77, 72, 72, 0.507);
+    border-radius: 15px;
+    padding: 5px;
+    margin: 20px auto;
+}
+.rated p{
+    font-size: 13px;
+    color: var(--Orange);
+}
+.thanku{
+    width: 100%;
+    display: flex;
+}
+.thanku h2{
+    margin: 10px auto;
+    color: white;
+    font-size: 22px;
+}
+.para{
+    width: 270px;
+    margin-left: 7%;
+    margin-top: 10px;
+}
+.para p{
+    font-size: 14px;
+    color: var(--Medium-Grey);
+    text-align: center;
+}
+
+
+
+
